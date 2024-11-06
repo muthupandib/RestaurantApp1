@@ -1,0 +1,27 @@
+.category-btns-ul-container {
+  display: flex;
+  padding: 0px 10px 0px 10px;
+  list-style-type: none;
+}
+.li {
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10px 0px 10px;
+  border-bottom: 2px solid transparent;
+}
+.border {
+  border-bottom: 2px solid brown;
+}
+
+.btn {
+  background-color: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px 10px 20px;
+}
+.heading {
+  font-size: 20px;
+}
