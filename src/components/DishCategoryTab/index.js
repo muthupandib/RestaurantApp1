@@ -8,13 +8,13 @@ const DishCategoryTab = props => {
     onChangeTabId(menuCategoryId)
   }
   return (
-    <li className='menu-item'>
+    <li className="menu-item">
       <button
         onClick={onTabClick}
         className={`tab-btn ${activeClass}`}
-        type='button'
+        type="button"
       >
-        <p className='tab-name'>{menuCategory}</p>
+        <p className="tab-name">{menuCategory}</p>
       </button>
     </li>
   )

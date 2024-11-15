@@ -42,8 +42,8 @@ class Home extends Component {
   }
 
   renderLoader = () => (
-    <div className='loader-container'>
-      <Loader type='ThreeDots' color='#0b69ff' height='50' width='50' />
+    <div className="loader-container">
+      <Loader type="ThreeDots" color="#0b69ff" height="50" width="50" />
     </div>
   )
 
@@ -94,8 +94,8 @@ class Home extends Component {
     return (
       <>
         <Header count={count} />
-        <div className='dish-item-category-div'>
-          <ul className='tabs-container'>
+        <div className="dish-item-category-div">
+          <ul className="tabs-container">
             {updatedTableMenuData.map(each => (
               <DishCategoryTab
                 key={each.menuCategoryId}
@@ -106,7 +106,7 @@ class Home extends Component {
             ))}
           </ul>
         </div>
-        <ul className='dish-items-containers'>
+        <ul className="dish-items-containers">
           {updatedDishesArray.map(each => (
             <DishItem
               count={count}
@@ -129,14 +129,14 @@ class Home extends Component {
       case diffStates.success:
         return this.renderSuccessView()
       case diffStates.fail:
-        return <h1 className='failure-mesg'>Failed To Load...</h1>
+        return <h1 className="failure-mesg">Failed To Load...</h1>
       default:
         return null
     }
   }
 
   render() {
-    return <div className='home-main-container'>{this.renderDiffViews()}</div>
+    return <div className="home-main-container">{this.renderDiffViews()}</div>
   }
 }
 
